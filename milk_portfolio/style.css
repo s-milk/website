@@ -1,0 +1,17 @@
+.menuBtn{
+    position:absolute;
+    top:12px;
+    right:12px;
+    border: 1pt solid rgba(255, 255, 255, .5);
+    color: var(--white);
+    padding: .3rem .5rem;
+}
+
+.menu{
+    background: var(--grey);
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+}
