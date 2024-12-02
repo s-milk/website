@@ -1,13 +1,16 @@
-section{
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center left;
+body{
+    margin: 0;
 }
 
-.top{
+.page{
+    background-size: cover;
+    background-position: left;
+}
+
+#page-1{
     background-image: url(top.JPG);
-    text-align: left;
-    padding-top: 50vh;
-    height: 100vh;
+    /* text-align: left; */
+    /* padding-top: 50vh; */
+    min-height: 100vh;
+    box-sizing: border-box;
 }
