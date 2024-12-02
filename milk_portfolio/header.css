@@ -1,0 +1,93 @@
+/* body {
+    background-color: #efefef;
+} */
+
+.header{
+    position: relative;
+    top: 0;
+    height: 60px;
+    background-color: rgba(215, 215, 215, 0.8);
+}
+
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.nav {
+    position: absolute;
+    top: 24px;
+    width: 100%;
+    z-index: 10;
+}
+
+ul {
+    height: 0;
+    overflow: hidden;
+    transition: .3s;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+li a {
+    padding: 8px;
+    font-size: 16px;
+    color: #464646;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* ハンバーガーの部分 */
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    z-index: 10;
+}
+
+.hamburger span {
+    /*3本の線を作る*/
+    transition: all .3s;
+    position: absolute;
+    height: 2px;
+    background-color: #333;
+    width: 100%;
+    z-index: 10;
+}
+
+.hamburger span:nth-of-type(1) {
+    /*上の線の位置*/
+    top: 4px;
+}
+
+.hamburger span:nth-of-type(2) {
+    /*真ん中の線の位置*/
+    top: 12px;
+}
+
+.hamburger span:nth-of-type(3) {
+    /*下の線の位置*/
+    top: 20px;
+}
+
+.hamburger.open span:nth-of-type(1) {
+    /*openのとき、上の線を右斜めにする*/
+    top: 10px;
+    transform: translateY(6px) rotate(-33deg);
+}
+
+.hamburger.open span:nth-of-type(2) {
+    /*真ん中の線を消す*/
+    opacity: 0;
+}
+
+.hamburger.open span:nth-of-type(3) {
+    /*下の線を左斜めにする*/
+    top: 22px;
+    transform: translateY(-6px) rotate(33deg);
+}

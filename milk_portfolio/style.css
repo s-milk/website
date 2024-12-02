@@ -1,17 +1,16 @@
-.menuBtn{
-    position:absolute;
-    top:12px;
-    right:12px;
-    border: 1pt solid rgba(255, 255, 255, .5);
-    color: var(--white);
-    padding: .3rem .5rem;
+body{
+    margin: 0;
 }
 
-.menu{
-    background: var(--grey);
-    width: 100%;
-    position: absolute;
-    top: 50px;
-    right: 0;
+.page{
+    background-size: cover;
+    background-position: left;
+}
 
+#page-1{
+    background-image: url(top.JPG);
+    /* text-align: left; */
+    /* padding-top: 50vh; */
+    min-height: 100vh;
+    box-sizing: border-box;
 }
