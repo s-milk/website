@@ -10,7 +10,9 @@ p {
   box-sizing: border-box;
   text-align: left;
   padding-top: 50vh;
-  font-family: ;
+  font-family: 'Gabriola';
+  font-size: 200%;
+  color:azure;
 }
 
 #page-1 {
