@@ -1,36 +1,30 @@
-body,p{
-    margin: 0;
+body,
+p {
+  margin: 0;
 }
 
-.page{
-    background-size: cover;
-}
-
-#page-1{
-    background-image: url(top.JPG);
-    /* text-align: left; */
-    /* padding-top: 50vh; */
-    min-height: 100vh;
-    box-sizing: border-box;
-    background-size: cover;
-}
-
-#page-2{
-  background-image: url(page-2.JPG);
+.page {
   min-height: 100vh;
-  background-position: center;
   background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  text-align: left;
+  padding-top: 50vh;
+  font-family: ;
+}
+
+#page-1 {
+  background-image: url(top.JPG);
+}
+
+#page-2 {
+  background-image: url(page-2.JPG);
 }
 
 #page-3 {
   background-image: url(page-3.JPG);
-  min-height: 100vh;
-  background-position: center;
-  background-size: cover;
 }
 
 #page-4 {
   background-image: url(top.JPG);
-  min-height: 100vh;
-  background-size: cover;
 }
