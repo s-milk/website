@@ -1,8 +1,7 @@
-body,
-p {
-  margin: 0;
+body {
   background-color: black;
   position: relative;
+  margin: 0;
 }
 
 .page {
@@ -11,49 +10,69 @@ p {
   background-position: center;
   box-sizing: border-box;
   text-align: left;
-  padding-top: 50vh;
-  font-family: 'Gabriola';
-  font-size: 200%;
-  color:azure;
+  padding: 40vh 0;
+  /* font-family: 'Gabriola'; */
+  font-size: 300%;
+  color: azure;
 }
 
-/* #page-1 {
-  background-image: url(top.JPG);
+p {
+  margin: 0 1rem;
+}
+
+.text {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 120%;
+}
+
+.text-ja {
+  font-family: "Kiwi Maru", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 10px;
+}
+
+#page-1 {
+  background-image: url(/top/page-1.webP);
 }
 
 #page-2 {
-  background-image: url(page-2.JPG);
+  background-image: url(/top/page-2.webP);
 }
 
 #page-3 {
-  background-image: url(page-3.JPG);
+  background-image: url(/top/page-3.webP);
+  background-position: 35%;
 }
 
 #page-4 {
-  background-image: url(top.JPG);
-} */
+  background-image: url(/top/page-4.webP);
+}
 
 .grid {
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   /* grid-template-rows: ; */
   /* margin-top: 6%;
   margin-bottom: 30px; */
 }
 
-#zooming{
+#zooming {
   position: absolute;
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   display: none;
   justify-content: center;
   align-items: center;
 }
 
-.zoom{
+.zoom {
   object-fit: scale-down;
   width: 100%;
   /* height: 250px; */
@@ -62,12 +81,12 @@ p {
   object-position: center;
 }
 
-#zoom1{
-  width: 80%;
+#zoom1 {
+  width: 95%;
 }
 
 .big {
-  animation:big 0.3s ease-out;
+  animation: big 0.3s ease-out;
 }
 
 @keyframes big {
