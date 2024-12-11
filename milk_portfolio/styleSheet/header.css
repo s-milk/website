@@ -1,0 +1,157 @@
+/* body {
+    background-color: #efefef;
+} */
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    color: #ffffff;
+    font-size: 25px;
+    width: 100vw;
+    padding-left: 10px;
+}
+
+
+.nav {
+    /* position: absolute; */
+    top: 30px;
+    width: 100%;
+    z-index: 10;
+}
+
+#header-menu {
+    height: 0;
+    overflow: hidden;
+    transition: .3s;
+    list-style: none;
+    margin-top: 25px;
+    position: fixed;
+    top: 25px;
+    width: 100%;
+    padding-inline-start: 0;
+}
+
+li a {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Kiwi Maru", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 10px;
+}
+
+a:link {
+    color: azure;
+    text-decoration: none;
+}
+a:visited {
+    color: azure;
+}
+a:hover {
+    color: crimson;
+}
+
+/* ハンバーガーの部分 */
+.hamburger {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    z-index: 10;
+}
+
+.hamburger span {
+    /*3本の線を作る*/
+    transition: all .3s;
+    position: absolute;
+    height: 3px;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 10;
+}
+
+.hamburger span:nth-of-type(1) {
+    /*上の線の位置*/
+    top: 4px;
+}
+
+.hamburger span:nth-of-type(2) {
+    /*真ん中の線の位置*/
+    top: 12px;
+}
+
+.hamburger span:nth-of-type(3) {
+    /*下の線の位置*/
+    top: 20px;
+}
+
+.hamburger.open span:nth-of-type(1) {
+    /*openのとき、上の線を右斜めにする*/
+    top: 10px;
+    transform: translateY(6px) rotate(-33deg);
+}
+
+.hamburger.open span:nth-of-type(2) {
+    /*真ん中の線を消す*/
+    opacity: 0;
+}
+
+.hamburger.open span:nth-of-type(3) {
+    /*下の線を左斜めにする*/
+    top: 22px;
+    transform: translateY(-6px) rotate(33deg);
+}
+
+.ue-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: block;
+    text-align: center;
+    border-radius: 24px;
+    box-shadow: 3px 3px 8px -1px #000000;
+}
+
+.ue-btn::before {
+    content: '';
+    line-height: 48px;
+}
+
+.ue {
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffffff;
+    line-height: 1;
+    width: 1em;
+    height: 1em;
+    border: 0.2em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(25%) rotate(-45deg);
+}

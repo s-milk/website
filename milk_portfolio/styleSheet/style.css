@@ -1,0 +1,177 @@
+body {
+  background-color: black;
+  position: relative;
+  margin: 0;
+  color: azure;
+  font-size: 150%;
+}
+
+.page {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 40vh 0;
+  /* font-family: 'Gabriola'; */
+}
+
+p {
+  margin: 0 1rem;
+}
+
+.text {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 150%;
+}
+
+.text-ja {
+  font-family: "Kiwi Maru", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 10px;
+}
+
+#page-1 {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(top/page-1.webp);
+  background-blend-mode: darken;
+}
+
+#page-2 {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(top/page-2.webp);
+  background-blend-mode: darken;
+}
+
+#page-3 {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(top/page-3.webp);
+  background-position: 35%;
+  background-blend-mode: darken;
+}
+
+#page-4 {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(top/page-4.webp);
+  background-blend-mode: darken;
+}
+
+.grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: ; */
+  /* margin-top: 6%;
+  margin-bottom: 30px; */
+}
+
+#zooming {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.zoom {
+  object-fit: scale-down;
+  width: 100%;
+  /* height: 250px; */
+  aspect-ratio: 1.5;
+  object-fit: cover;
+  object-position: center;
+}
+
+#zoom1 {
+  width: 95%;
+}
+
+.big {
+  animation: big 0.3s ease-out;
+}
+
+@keyframes big {
+  from {
+    transform: scale(0);
+  }
+}
+
+#milk {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  top: 20px;
+  left: 30px;
+}
+
+.pro {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#name {
+  font-size: 150%;
+  margin-bottom: 20px;
+}
+
+.pro-menu {
+  font-family: "Kiwi Maru", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50%;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.comment p {
+  margin: 0;
+}
+
+.camera1 {
+  margin-bottom: 5px;
+}
+
+#form {
+  font-family: "Kiwi Maru", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100%;
+  margin-top: 30px;
+  text-align: center;
+  background-color: #153e6789;
+}
+
+label{
+  font-size: 50%;
+  display: block;
+}
+
+#icon {
+  margin-left: 10px;
+  display: flex;
+  width: 100%;
+  position: relative;
+  /* margin-top: 20px; */
+}
+
+#icon i{
+  margin-left: 20px;
+}
+
+#icon a{
+  color: azure;
+}
+
+#icon p{
+  font-size: 40%;
+  margin-left: 30px;
+}
