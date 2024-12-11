@@ -37,26 +37,26 @@ p {
 
 #page-1 {
   background-color: rgba(0, 0, 0, 0.4);
-  background-image: url(top/page-1.webp);
+  background-image: url(../top/page-1.webp);
   background-blend-mode: darken;
 }
 
 #page-2 {
   background-color: rgba(0, 0, 0, 0.4);
-  background-image: url(top/page-2.webp);
+  background-image: url(../top/page-2.webp);
   background-blend-mode: darken;
 }
 
 #page-3 {
   background-color: rgba(0, 0, 0, 0.4);
-  background-image: url(top/page-3.webp);
+  background-image: url(../top/page-3.webp);
   background-position: 35%;
   background-blend-mode: darken;
 }
 
 #page-4 {
   background-color: rgba(0, 0, 0, 0.4);
-  background-image: url(top/page-4.webp);
+  background-image: url(../top/page-4.webp);
   background-blend-mode: darken;
 }
 
