@@ -36,20 +36,29 @@ p {
 }
 
 #page-1 {
-  background-image: url(/top/page-1.webP);
+  background-image: url(top/page-1.webp);
+}
+#page-1::after{
+  content: "";
+background: rgba(0, 0, 0, 0.3);
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
 }
 
 #page-2 {
-  background-image: url(/top/page-2.webP);
+  background-image: url(top/page-2.webp);
 }
 
 #page-3 {
-  background-image: url(/top/page-3.webP);
+  background-image: url(top/page-3.webp);
   background-position: 35%;
 }
 
 #page-4 {
-  background-image: url(/top/page-4.webP);
+  background-image: url(top/page-4.webp);
 }
 
 .grid {
