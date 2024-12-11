@@ -1,6 +1,9 @@
 /* body {
     background-color: #efefef;
 } */
+html {
+    scroll-behavior: smooth;
+}
 
 .header {
     position: fixed;
@@ -56,6 +59,17 @@ li a {
     padding-left: 10px;
 }
 
+a:link {
+    color: azure;
+    text-decoration: none;
+}
+a:hover {
+    color: crimson;
+}
+a:visited {
+    color: azure;
+}
+
 /* ハンバーガーの部分 */
 .hamburger {
     position: fixed;
@@ -107,4 +121,37 @@ li a {
     /*下の線を左斜めにする*/
     top: 22px;
     transform: translateY(-6px) rotate(33deg);
+}
+
+.ue-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: block;
+    text-align: center;
+    border-radius: 24px;
+    box-shadow: 3px 3px 8px -1px #000000;
+}
+
+.ue-btn::before {
+    content: '';
+    line-height: 48px;
+}
+
+.ue {
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffffff;
+    line-height: 1;
+    width: 1em;
+    height: 1em;
+    border: 0.2em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(25%) rotate(-45deg);
 }
