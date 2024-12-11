@@ -2,36 +2,103 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ヘッダーメニュー</title>
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>milk PORTFOLIO</title>
+  <link rel="stylesheet" href="/styleSheet/header.css">
+  <link rel="stylesheet" href="/styleSheet/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kiwi+Maru&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <div class="logo">logo</div>
-        </div>
-        <nav class="nav">
-            <ul id="header-menu">
-                <li><a href="">TOP</a></li>
-                <li><a href="">Topography　地形</a></li>
-                <li><a href="">Close-up　生物</a></li>
-                <li><a href="">Coral reef　サンゴ礁</a></li>
-                <li><a href="">プロフィール</a></li>
-                <li><a href="">お問い合わせ</a></li>
-            </ul>
-        </nav>
-        <div id="hamburger" class="hamburger">
-            <span></span><span></span><span></span>
-        </div>
-    </header>
-    <div class="page">
-        <div id="page-1"></div>
+  <header>
+    <div class="header">
+      <div class="text" id="logo">milk Portfolio</div>
     </div>
-    <script src="script.js"></script>
+    <nav class="nav">
+      <ul id="header-menu">
+        <li><a href="#page-1">TOP</a></li>
+        <li><a href="#page-2">Topography 地形</a></li>
+        <li><a href="#page-3">Close-up 生物</a></li>
+        <li><a href="#page-4">Coral reef サンゴ礁</a></li>
+        <li><a href="#pro">プロフィール</a></li>
+        <li><a href="#form">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger" class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <div id="ue-btn">
+      <a href="#" class="ue-btn">
+        <span class="ue"></span>
+      </a>
+    </div>
+  </header>
+  <div>
+    <div id="page-1" class="page">
+      <p class="text" id="back">Underwater</p>
+      <p class="text">Photogallery</p>
+    </div>
+  </div>
+  <div>
+    <div id="page-2" class="page">
+      <a href="topography.html">
+        <p class="text-ja">地形</p>
+        <p class="text">Topography</p>
+      </a>
+    </div>
+  </div>
+  <div>
+    <div id="page-3" class="page">
+      <a href="close-up.html">
+        <p class="text-ja">生物</p>
+        <p class="text">Close-up</p>
+      </a>
+    </div>
+  </div>
+  <div>
+    <div id="page-4" class="page">
+      <a href="coral reef.html">
+        <p class="text-ja">サンゴ礁</p>
+        <p class="text">Coral reef</p>
+      </a>
+    </div>
+  </div>
+  <div id="pro">
+    <p class="text">Profile</p>
+    <div class="pro">
+      <img id="milk" src="milk.png" alt="">
+      <div class="pro-menu">
+        <p id="name">milk</p>
+      </div>
+      <div class="pro-menu">
+        <div class="comment">
+          <p>マクロよりワイド派</p>
+          <p>地形・大物大歓迎</p>
+        </div>
+      </div>
+    </div>
+    <div id="icon">
+      <a href="https://x.com/milk_stout_"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://github.com/s-milk"><i class="fa-brands fa-github"></i></a>
+      <div>
+        <p class="camera1">＜使用機材＞</p>
+        <p class="camera">OM SYSTEM Tough TG-7</p>
+        <p class="camera">防水ハウジング PT-059</p>
+        <p class="camera">AOI UWL-04A ワイドアングルコンバージョンレンズ 0.42X</p>
+      </div>
+    </div>
+  </div>
+  <div id="form">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSertBy5SY89ZZ5LYjXc9TSJKtVudSbHtDzpcmy5S9qe4-gV-g/viewform?embedded=true"
+      width="100%" height="700px" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/07abfe73b7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
