@@ -43,20 +43,20 @@ p {
 
 #page-2 {
   background-color: rgba(0, 0, 0, 0.4);
-  background-image: url(../top/page-2.webp);
+  background-image: url(../top/page-2.webP);
   background-blend-mode: darken;
 }
 
 #page-3 {
   background-color: rgba(0, 0, 0, 0.4);
-  background-image: url(../top/page-3.webp);
+  background-image: url(../top/page-3.webP);
   background-position: 35%;
   background-blend-mode: darken;
 }
 
 #page-4 {
   background-color: rgba(0, 0, 0, 0.4);
-  background-image: url(../top/page-4.webp);
+  background-image: url(../top/page-4.webP);
   background-blend-mode: darken;
 }
 
@@ -147,7 +147,7 @@ p {
   font-size: 100%;
   margin-top: 30px;
   text-align: center;
-  background-color: #153e6789;
+  background-color: black;
 }
 
 label{
